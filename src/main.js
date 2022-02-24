@@ -41,7 +41,7 @@ class Title extends React.Component {
     return (
       <div>
         <h1>Critique</h1>
-        <h3>website description</h3>
+        <h3>Website description</h3>
       </div>
     );
   }
@@ -71,9 +71,9 @@ class FilmRow extends React.Component {
       <k>
         <dt>
           <br />
-          <h3>{film.title}</h3>
+          <h3>{film.name}</h3>
         </dt>
-        <dd>{film.release_year}</dd>
+        <dd>{film.price}</dd>
         <br />
       </k>
     );
@@ -87,11 +87,11 @@ class FilmTable extends React.Component {
     const rows = [];
 
     this.props.films.forEach((film) => {
-      if (film.title.toLowerCase().indexOf(filterText) === -1) {
+      if (film.name.toLowerCase().indexOf(filterText) === -1) {
         return;
       }
 
-      rows.push(<FilmRow film={film} key={film.title} />);
+      rows.push(<FilmRow film={film} key={film.name} />);
     });
     return (
       <dl>{rows}</dl>
@@ -104,26 +104,26 @@ class FilmTable extends React.Component {
 
 const FILMS = [
   {
-    release_year: "2006",
-    title: "ACADEMY DINOSAUR",
+    price: "2006",
+    name: "ACADEMY DINOSAUR",
   },
   {
-    release_year: "2006",
-    title: "ACE GOLDFINGER",
+    price: "2006",
+    name: "ACE GOLDFINGER",
   },
   {
-    release_year: "2006",
-    title: "ADAPTATION HOLES",
+    price: "2006",
+    name: "ADAPTATION HOLES",
   },
   {
-    release_year: "2006",
-    title: "AFFAIR PREJUDICE",
+    price: "2006",
+    name: "AFFAIR PREJUDICE",
   },
   {
-    release_year: "2006",
-    title: "AFRICAN EGG",
+    price: "2006",
+    name: "AFRICAN EGG",
   },
-  { release_year: "2006", title: "AGENT TRUMAN" },
+  { price: "2006", name: "AGENT TRUMAN" },
 ];
 
 ReactDOM.render(
