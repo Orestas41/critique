@@ -2,6 +2,7 @@ k {
   display: inline-block;
   vertical-align: top;
   width: 5cm;
+  margin: 1cm;
 }
 #welcome {
   position: absolute;
@@ -14,6 +15,8 @@ body {
   background-color: bisque;
 }
 
-#filmTable {
-  background-color: aqua;
+#select-film {
+  background-color: pink;
+  width: 5cm;
+  height: 6cm;
 }

@@ -2,6 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
+class Title extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Critique</h1>
+        <h3>website description</h3>
+      </div>
+    );
+  }
+}
+
 class FilterableFilmTable extends React.Component {
   constructor(props) {
     super(props);
@@ -36,17 +47,6 @@ class FilterableFilmTable extends React.Component {
   }
 }
 
-class Title extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Critique</h1>
-        <h3>website description</h3>
-      </div>
-    );
-  }
-}
-
 class SearchBar extends React.Component {
   render() {
     const filterText = this.props.filterText;
@@ -69,12 +69,14 @@ class FilmRow extends React.Component {
 
     return (
       <k>
-        <dt>
+        <button id="select-film">
+          <dt>
+            <br />
+            <h3>{film.title}</h3>
+          </dt>
+          <dd>{film.release_year}</dd>
           <br />
-          <h3>{film.title}</h3>
-        </dt>
-        <dd>{film.release_year}</dd>
-        <br />
+        </button>
       </k>
     );
   }
@@ -98,6 +100,37 @@ class FilmTable extends React.Component {
       //   <table>
       //     <tbody>{rows}</tbody>
       //   </table>
+    );
+  }
+}
+
+// class FilmInfo extends React.Component {
+//   filmButton = "select-film";
+//   render() {
+//     return (filmButton = addEventListener("click", (evt) => {
+//       <div id="welcome">
+//         <FilmTitle />
+//         {/* <SearchBar
+//             filterText={this.state.filterText}
+//             onFilterTextChange={this.handleFilterTextChange}
+//           />
+//           <br></br>
+//           <FilmTable
+//             films={this.props.films}
+//             filterText={this.state.filterText}
+//           /> */}
+//       </div>;
+//     }));
+//   }
+// }
+
+class FilmTitle extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Film Title</h1>
+        <h3>film description</h3>
+      </div>
     );
   }
 }
