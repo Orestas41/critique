@@ -4,10 +4,12 @@ k {
   width: 5cm;
   margin: 1cm;
 }
-#welcome {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
+
+#title {
+  text-align: center;
+}
+
+#search {
   text-align: center;
 }
 
@@ -15,8 +17,75 @@ body {
   background-color: bisque;
 }
 
-#select-film {
+#films {
+  text-align: center;
+}
+
+.select-film {
   background-color: pink;
   width: 5cm;
-  height: 6cm;
+  height: 10cm;
+}
+
+#film-info {
+  position: absolute;
+}
+
+#film-title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  overflow: hidden;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#actors {
+  text-align: center;
+}
+
+l {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5cm;
+  margin-top: 1cm;
+}
+
+#reviews {
+  overflow: hidden;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#add-review {
+  overflow: hidden;
+  width: 20%;
+  height: 2cm;
+  text-align: center;
+  margin-left: 40%;
+}
+
+/* textarea[type="text"],
+select {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 1cm;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+} */
+
+#save-review {
+  overflow: hidden;
+  width: 20%;
+  height: 1cm;
+  text-align: center;
+  margin-left: 40%;
 }
