@@ -1,91 +1,72 @@
-k {
+#k {
   display: inline-block;
   vertical-align: top;
-  width: 5cm;
-  margin: 1cm;
+  width: 10.5cm;
+  align-content: center;
+  overflow: auto;
 }
 
 #title {
   text-align: center;
+  font-size: x-large;
 }
 
 #search {
   text-align: center;
 }
 
+#search-box {
+  width: 7cm;
+  height: 1cm;
+  background-color: pink;
+  font-size: medium;
+  border-radius: 4px;
+}
+
 body {
   background-color: bisque;
+  font-family: Verdana;
 }
 
 #films {
-  text-align: center;
+  position: relative;
+  overflow: auto;
+  width: 95%;
+  margin-left: 2.5%;
 }
 
 .select-film {
+  overflow: auto;
   background-color: pink;
-  width: 5cm;
-  height: 10cm;
+  padding: 1cm;
+  width: 8cm;
+  height: 20cm;
+  border-style: solid;
+  border-width: 10px 4px 4px 4px;
+  border-color: rgb(6, 255, 213) black black black;
+  border-radius: 20px;
 }
 
-#film-info {
-  position: absolute;
-}
-
-#film-title {
+#centre {
   text-align: center;
 }
 
-#description {
-  text-align: center;
-  overflow: hidden;
-  width: 50%;
-  margin-left: 25%;
+#actor-list {
+  position: relative;
+  left: 1cm;
 }
 
-#actors {
-  text-align: center;
+#text-box {
+  background: transparent;
+  width: 100%;
 }
 
-l {
-  display: inline-block;
-  vertical-align: middle;
-  width: 5cm;
-  margin-top: 1cm;
-}
-
-#reviews {
-  overflow: hidden;
-  width: 50%;
-  margin-left: 25%;
-}
-
-#add-review {
-  overflow: hidden;
-  width: 20%;
-  height: 2cm;
-  text-align: center;
-  margin-left: 40%;
-}
-
-/* textarea[type="text"],
-select {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 1cm;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
+#button {
   border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
-} */
-
-#save-review {
-  overflow: hidden;
   width: 20%;
-  height: 1cm;
-  text-align: center;
   margin-left: 40%;
+}
+
+::-webkit-scrollbar {
+  color: red;
 }
