@@ -61,7 +61,7 @@ class SearchBar extends React.Component {
 }
 
 function AmendReview() {
-  const baseURL = "http://localhost:8080/HomePage";
+  const baseURL = "http://3.88.31.41:8080/HomePage";
   const review_id = useRef(null);
   const update_review = useRef(null);
   const [updateResult, setUpdateResult] = useState(null);
@@ -160,7 +160,7 @@ class FilmRow extends React.Component {
     const filmdata = this.props.movies;
 
     function AddReview(props) {
-      const baseURL = "http://localhost:8080/HomePage";
+      const baseURL = "http://3.88.31.41:8080/HomePage";
       const film_film_id = useRef(null);
       const post_review = useRef(null);
       const [postResult, setPostResult] = useState(null);
@@ -267,7 +267,7 @@ class FilmTable extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8080/HomePage/AllFilms")
+    fetch("http://3.88.31.41:8080/HomePage/AllFilms")
       .then((response) => response.json())
       .then((response) => this.setState({ top: response }));
   }

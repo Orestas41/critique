@@ -45,6 +45,7 @@ body {
   border-width: 10px 4px 4px 4px;
   border-color: rgb(6, 255, 213) black black black;
   border-radius: 20px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #centre {
@@ -59,14 +60,16 @@ body {
 #text-box {
   background: transparent;
   width: 100%;
+  height: 1cm;
+  border-radius: 6px;
 }
 
 #button {
   border-radius: 4px;
   width: 20%;
-  margin-left: 40%;
+  margin-left: 20%;
 }
 
 ::-webkit-scrollbar {
-  color: red;
+  color: transparent;
 }
