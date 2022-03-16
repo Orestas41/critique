@@ -223,7 +223,6 @@ class FilmRow extends React.Component {
 
     return (
       <ul id="k">
-        {/* <button className="select-film" onClick={changeStatus}> */}
         <div className="select-film">
           <dt>
             <h1 id="centre">{filmdata.title}</h1>
@@ -252,7 +251,6 @@ class FilmRow extends React.Component {
           <b>Amend or delete review</b>
           <AmendReview />
         </div>
-        {/* </button> */}
       </ul>
     );
   }
